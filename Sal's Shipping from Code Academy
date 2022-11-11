@@ -1,0 +1,43 @@
+## Sal's Shipping
+## Celticdenefew
+
+## weight variable
+weight = 41.5
+
+## Ground Shipping chart
+
+if weight > 10:
+  price_per_pound = 4.75
+  flat_charge = 20
+elif weight <= 10 and weight > 6:
+  price_per_pound = 4.00
+  flat_charge = 20
+elif weight <= 6 and weight > 2:
+  price_per_pound = 3.00
+  flat_charge = 20
+elif weight <= 2:
+  price_per_pound = 1.50
+  flat_charge = 20
+
+## formula for finding the cost of shipping for Ground Shipping
+ground_shipping = weight * price_per_pound + flat_charge
+print("Your ground shipping cost is", str(ground_shipping))
+
+## Premium Ground Shipping
+prem_grnd_shipping = ("$125.00")
+print("Your premium ground shipping cost is", str(prem_grnd_shipping))
+
+## Premium Drone Shipping
+if weight <= 2:
+  price_per_pound = 4.5
+elif weight <= 6:
+  price_per_pound = 9.
+elif weight >6 and weight <= 10:
+  price_per_pound = 12.
+else:
+  price_per_pound = 14.25
+
+## Drone shipping calculations
+drone_shipping = weight * price_per_pound
+drone_shipping = (round(drone_shipping, 2))
+print("Your premium drone shipping cost is", str(drone_shipping))
