@@ -1,4 +1,4 @@
-## Generates Yes, No, Yes and... type questions for RPG
+## Generates Yes, No, Yes and... type questions for RPGs
 ## Pull in Random number generator
 import random
 
